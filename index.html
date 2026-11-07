@@ -3,41 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bootloader</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      overflow: hidden;
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #splash {
-      width: 500px;
-      height: 500px;
-      background: url("boot/splash.png") no-repeat center center;
-      background-size: contain;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 0.75;
-      }
-    }
-  </style>
+  <title>rOS</title>
 </head>
 <body>
-  <div id="splash"></div>
-  <script type="module" src="vmlinuz.js"></script>
+  <script src="biosapi.js"></script>
 </body>
 </html>
